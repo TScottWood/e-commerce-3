@@ -14,7 +14,7 @@ const Book = () => {
         </a>   
         <div className="book__title">
             <a href="/" className="book__title--link">
-            Cracking the Coding Interview 
+            Atomic Habits 
             </a>
         </div> 
         <div className="book_ratings">
