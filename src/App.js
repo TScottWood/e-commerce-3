@@ -10,6 +10,7 @@ function App() {
       <Landing />
       <Highlights />
       <Featured />
+      <Discounted />
     </div>
   );
 }
