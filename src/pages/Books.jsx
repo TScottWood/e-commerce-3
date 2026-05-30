@@ -1,4 +1,5 @@
 import React from 'react'
+import Book from "../components/ui/Book";
 import { books } from "../data";
 
 const Books = () => {
@@ -9,9 +10,13 @@ const Books = () => {
           <div className="books__container">
             <div className="row">
               <div className="books__header">
-                <h2 className="section__title books__header--title">All Books</h2>
-                <select id="filter" defaultValue="DEFAULT">
-                  <option value="DEFAULT" disabled>Sort</option>
+                <h2 className="section__title books__header--title">
+                  All Books
+                  </h2>
+                <select id="filter">
+                  <option value="" disabled selected>
+                    <Sort>
+                  </option>
                   <option value="LOW TO LOW">Price, Low to High</option>
                   <option value="HIGH TO LOW">Price, High to Low</option>
                   <option value="RATING">Rating</option>
