@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from "react";
 import Book from "../components/ui/Book";
-import { books } from "../data";
 
-const Books = () => {
+const Books = ({ books: initialBooks }) => {
+  const [books, setBooks] = useState(initialBooks);
   return (
     <div id="books__body">
       <main id="books__main">
@@ -12,7 +12,7 @@ const Books = () => {
               <div className="books__header">
                 <h2 className="section__title books__header--title">
                   All Books
-                  </h2>
+                </h2>
                 <select id="filter" defaultValue="">
                   <option value="" disabled>
                     Sort
@@ -30,9 +30,9 @@ const Books = () => {
             </div>
           </div>
         </section>
-      </main>    
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default Books
+export default Books;
